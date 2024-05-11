@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>YES! Единая Система Идентификации Сотрудников</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Wide card with share menu button -->
+  <style>
+    .demo-card-wide.mdl-card {
+      width: 400px;
+    }
+
+    .demo-card-wide>.mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: url('data:image/png;base64,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') 30% 30% center / cover;
+    }
+
+    .demo-card-wide>.mdl-card__menu {
+      color: #fff;
+    }
+  </style>
+
+
+
+  <!-- card#1 -->
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp main">
+
+    <h7 style="margin-left: auto; margin-right: auto;color:red;text-align: center;"><b>&#33; По вопросам сотрудничества обращаться:</br> &#9742; +79140936280 &#9993; bayratskiy@yahoo.com</b></h7>
+
+    <img src="./img/logo.jpg" height="200px" width="200px" style="margin-left: auto; margin-right: auto;" />
+
+
+
+
+    <div class="mdl-card__supporting-text">
+
+      <div class="mdl-grid">
+        <main class="mdl-cell mdl-cell--12-col">
+          
+
+              <div style="text-align: center;">ID Сотрудника:</div>
+              <h4 style="margin-left: auto; margin-right: auto; text-align: center;"><b style="color:red">SKS4</b></h4> 
+        
+
+        </main>
+        </div>
+
+        <div class="mdl-grid">
+
+               <img
+            src="data:image/png;base64,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"
+            alt="Girl in a jacket" style="width:150px;height:auto; display: block; margin-left: auto; margin-right: auto;">
+
+
+      </div>
+
+    </div>
+    
+    <!-- card#1 end -->
+
+    <!-- card#2 -->
+    <div class="demo-card-wide mdl-card mdl-shadow--30dp main">
+
+      <div class="mdl-card__supporting-text">
+
+        <div class="mdl-grid">
+          <!-- List with avatar and controls -->
+          <style>
+            .demo-list-control {
+              width: 300px;
+            }
+
+            .demo-list-radio {
+              display: inline;
+            }
+          </style>
+
+
+
+  <div class="mdl-card__actions mdl-card--border">
+
+    <div class="mdl-grid">
+      <h7 style="margin-left: auto; margin-right: auto;">Должность:<b style="color:red"> Мастер участка</b></h7> 
+    </div>
+
+        <div class="mdl-grid">
+          <h7 style="margin-left: auto; margin-right: auto;">Компания:<b style="color:red"> ООО "СК-Сильвер"</b></h7> 
+        </div>
+           
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="demo-list-control mdl-list">
+
+                <li class="mdl-list__item">
+                  <main class="mdl-cell mdl-cell--8-col">
+
+                    Вводный инструктаж по охране труда
+
+                  </main>
+             
+                  <aside class="mdl-cell mdl-cell--4-col">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                      <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                    </label>
+
+                  </aside>
+                  28.02.24
+                </li>
+
+
+                <li class="mdl-list__item">
+                  <main class="mdl-cell mdl-cell--8-col">
+
+                    Вводный противопо-</br>жарный инструктаж
+
+                  </main>
+             
+                  <aside class="mdl-cell mdl-cell--4-col">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                      <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                    </label>
+
+                  </aside>
+                  28.02.24
+                </li>
+
+             
+
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+          <div class="mdl-card__actions mdl-card--border">
+            <h4 class="main" style="text-align: center;"><B>Обучение по ОТ</B></h4>
+            <div class="mdl-card__actions mdl-card--border">
+              <ul class="demo-list-control mdl-list">
+               
+                <li class="mdl-list__item">
+                  <main class="mdl-cell mdl-cell--6-col">
+
+                    46Б
+
+                  </main>
+                  учебный центр
+                  <aside class="mdl-cell mdl-cell--6-col">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                      <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                    </label>
+
+                  </aside>
+                  19.03.27
+                </li>
+
+
+
+                <li class="mdl-list__item">
+                  <main class="mdl-cell mdl-cell--6-col">
+
+                    46В
+
+                  </main>
+                  учебный центр
+                  <aside class="mdl-cell mdl-cell--6-col">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                      <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                    </label>
+
+                  </aside>
+                  13.03.25
+                </li>
+
+
+
+
+                <li class="mdl-list__item">
+                  <main class="mdl-cell mdl-cell--6-col">
+
+                    СИЗ
+
+                  </main>
+                  учебный центр
+                  <aside class="mdl-cell mdl-cell--6-col">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                      <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                    </label>
+
+                  </aside>
+                  18.03.27
+                </li>
+
+
+
+
+                <li class="mdl-list__item">
+                  <main class="mdl-cell mdl-cell--6-col">
+
+                    ПП
+
+                  </main>
+                  учебный центр
+                  <aside class="mdl-cell mdl-cell--6-col">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                      <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                    </label>
+
+                  </aside>
+                  12.02.27
+                </li>
+
+
+              </ul>
+
+            </div>
+
+                  <div class="mdl-card__actions mdl-card--border">
+                  
+                    <h4 class="main" style="text-align: center;"><B>Аттестация в ЕПТ</B></h4>
+                    <div class="mdl-card__actions mdl-card--border">
+
+                      <ul class="demo-list-control mdl-list">
+                         
+
+                        <li class="mdl-list__item">
+                          <main class="mdl-cell mdl-cell--8-col">
+        
+                            Б.1.10
+        
+                          </main>
+                     
+                          <aside class="mdl-cell mdl-cell--4-col">
+        
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                              <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                            </label>
+        
+                          </aside>
+                          
+                          24.04.29
+                        </li>
+
+                        </ul>
+
+
+
+                    </div>
+
+
+
+
+                    <div class="mdl-card__actions mdl-card--border">
+                      <h4 class="main" style="text-align: center;"><B>Проектные обучения</B></h4>
+                      <div class="mdl-card__actions mdl-card--border">
+
+
+
+
+                        <ul class="demo-list-control mdl-list">
+    
+                          <li class="mdl-list__item">
+                            <main class="mdl-cell mdl-cell--8-col">
+          
+                              НАРЯД-ДОПУСК
+          
+                            </main>
+                       
+                            <aside class="mdl-cell mdl-cell--4-col">
+          
+                              <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                                <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked disabled />
+                              </label>
+          
+                            </aside>
+                            07.03.24
+                          </li>
+
+
+            <div class="mdl-card__actions mdl-card--border">
+              
+            </div>
+                 
+</body>
+
+</html>
